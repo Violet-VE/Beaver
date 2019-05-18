@@ -1,6 +1,6 @@
 {
-  "name": "起点中文网",
-  "version": 102,
+  "name": "起点中文",
+  "version": 100,
   "category": 1,
   "url": "https://www.qidian.com",
   "charset": "utf-8",
@@ -25,7 +25,7 @@
       "div.book-mid-info > h4 > a@attr->href@js->'https:' + ${this}"
     ],
     "catalog": [
-      "#addBookBtn@attr->data-bid@js->'https://book.qidian.com/ajax/book/category?_csrfToken=deepink&bookId=' + ${this}"
+      "#addBookBtn@attr->data-bid@js->'https://druid.if.qidian.com/argus/api/v1/chapterlist/chapterlist?bookId=' + ${this}"
     ],
     "extra": [
       {
@@ -35,15 +35,11 @@
     ]
   },
   "catalog": {
-    "list": "$.data.vs",
+    "list": "$.Data.Chapters[1:]",
     "orderBy": 0,
-    "booklet": {
-      "name": "$.vN",
-      "list": "$.cs"
-    },
     "chapter": {
-      "name": "$.cN",
-      "link": "$.id@js->'https://m.qidian.com/book/'+ ${extra.bookID} + '/' + ${this}"
+      "name": "$.N",
+      "link": "$.C@js->'https://m.qidian.com/book/'+ ${extra.bookID} + '/' + ${this}"
     }
   },
   "content": {
@@ -56,23 +52,23 @@
   "rank": {
     "link": [
       {
-        "name": "月票榜",
+        "name": " 月票榜 ",
         "link": "https://www.qidian.com/rank/yuepiao?page="
       },
       {
-        "name": "热销榜",
+        "name": " 热销榜 ",
         "link": "https://www.qidian.com/rank/hotsales?page="
       },
       {
-        "name": "点击榜",
+        "name": " 点击榜 ",
         "link": "https://www.qidian.com/rank/newvipclick?page="
       },
       {
-        "name": "推荐榜",
+        "name": " 推荐榜 ",
         "link": "https://www.qidian.com/rank/recom?page="
       },
       {
-        "name": "新书榜",
+        "name": " 新书榜 ",
         "link": "https://www.qidian.com/rank/signnewbook?page="
       }
     ],
