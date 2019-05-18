@@ -2,7 +2,7 @@
 
 The repository is based on GitHub to provide an open book source repository for the Deepink, and welcomes the introduction of new book sources.
 
-仓库地址：https://raw.githubusercontent.com/chimisgo/BookSourceRepository/master/repository.json
+仓库地址：https://raw.githubusercontent.com/zsakvo/hm-source/master/repository.json
 
 ##### 目前已收录
 
