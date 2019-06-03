@@ -1,0 +1,40 @@
+{
+  "name": "九桃小说",
+  "version": 100,
+  "category": 1,
+  "url": "https://www.9txs.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["a.bookname", "div.detail > h1"],
+    "author": ["a.author", "p:nth-child(3) > a:nth-child(1)"],
+    "cover": [],
+    "summary": ["p.intro"],
+    "category": [
+      "p:nth-child(4)>a:nth-child(3)",
+      "p:nth-child(3) > a:nth-child(2)"
+    ],
+    "update": ["span.light@js->${this}.match(/\\d.+\\d/g)+''"],
+    "link": [
+      "a.bookname@attr->href@js->${url}+${this}",
+      "meta[property=og:url]@attr->content@js->${url}+${this}"
+    ],
+    "catalog": [
+      "meta[property=og:url]@attr->content@js->${this}.replace(/.html/g,'')"
+    ]
+  },
+  "catalog": {
+    "list": "dl:gt(0) > dd",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href@js->${url}+${this}"
+    }
+  },
+  "content": {
+    "text": "div#content"
+  },
+  "search": {
+    "link": "https://www.9txs.com/search.html@post->searchkey=${key}",
+    "list": "ul.library > li"
+  }
+}

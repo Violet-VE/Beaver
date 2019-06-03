@@ -9,6 +9,14 @@
       "rank": 5,
       "auth": true,
       "version": 100
+    },
+    {
+      "name": "九桃小说",
+      "url": "https://www.9txs.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
     }
   ]
 }
