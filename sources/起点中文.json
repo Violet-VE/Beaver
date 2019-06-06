@@ -11,8 +11,8 @@
       "p.author > a.name"
     ],
     "cover": [
-      "div.book-img-box > a > img@attr->src@js->'https:' + ${this}",
-      "a#bookImg > img@attr->src@js->'https:' + ${this}.replace(/180$/g,'')"
+      "div.book-img-box > a > img@attr->src",
+      "a#bookImg > img@attr->src"
     ],
     "summary": ["p.intro", "div.book-mid-info > p.intro"],
     "category": [
@@ -21,8 +21,8 @@
     ],
     "update": ["em.time"],
     "link": [
-      "div.book-img-box > a[data-eid=qd_S04]@attr->href@js->'https:' + ${this}",
-      "div.book-mid-info > h4 > a@attr->href@js->'https:' + ${this}"
+      "div.book-img-box > a[data-eid=qd_S04]@attr->href",
+      "div.book-mid-info > h4 > a@attr->href"
     ],
     "catalog": [
       "#addBookBtn@attr->data-bid@js->'https://druid.if.qidian.com/argus/api/v1/chapterlist/chapterlist?bookId=' + ${this}"

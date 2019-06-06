@@ -6,21 +6,18 @@
   "charset": "utf-8",
   "metadata": {
     "name": ["$.name"],
-    "author": ["$.author", "$.data[0].author"],
+    "author": ["$.author"],
     "cover": [
-      "$.photoPath@js->'https://book.chengxinqinye.com/book' + ${this}",
-      "$.data[0].photoPath@js->'https://book.chengxinqinye.com/book' + ${this}"
+      "$.photoPath@js->'https://book.chengxinqinye.com/book' + ${this}"
     ],
-    "summary": ["$.intro", "$.data[0].intro"],
-    "category": ["", "$.data[0].clsName"],
-    "update": ["$.data[0].createTime"],
+    "summary": ["$.intro"],
+    "category": ["$.clsName"],
+    "update": ["$.data[0].lastUpdate"],
     "link": [
-      "$.id@js->'http://app.youzibank.com/book/info?bookId='+${this}@@header->Seq=3b28f4be398947da273c3d1ec2c2fb8b",
-      "$.data[0].id@js->'http://app.youzibank.com/book/info?bookId='+${this}@@header->Seq=3b28f4be398947da273c3d1ec2c2fb8b"
+      "$.id@js->'http://app.youzibank.com/book/info?bookId='+${this}+'@header->Seq=3b28f4be398947da273c3d1ec2c2fb8b'"
     ],
     "catalog": [
-      "$.id@js->http://app.youzibank.com/book/chapter/listAll?bookId=' + ${this}",
-      "$.data[0].id@js->http://app.youzibank.com/book/chapter/listAll?bookId=' + ${this}"
+      "$.data[0].id@js->'http://app.youzibank.com/book/chapter/listAll?bookId=' + ${this}"
     ]
   },
   "catalog": {
@@ -28,14 +25,14 @@
     "orderBy": 0,
     "chapter": {
       "name": "$.name",
-      "link": "$.filePath@js->'http://app.youzibank.com/book' + ${this}"
+      "link": "$.filePath@js->'http://book.chengxinqinye.com/book' + ${this}"
     }
   },
   "content": {
     "text": ""
   },
   "search": {
-    "link": "${key}@js->'http://app.youzibank.com/es/search/book?pageNo=1&pageSize=10&q=' + encodeURIComponent(${this})",
+    "link": "http://app.youzibank.com/es/search/book?pageNo=1&pageSize=10&q=${key}@header->Seq=3b28f4be398947da273c3d1ec2c2fb8b",
     "list": "$.data"
   },
   "rank": {
@@ -58,18 +55,18 @@
       },
       {
         "name": "完本榜",
-        "link": "http://app.youzibank.com/popular/new/detail?pageSize=10subType=1&&type=5&pageNo="
+        "link": "http://app.youzibank.com/popular/new/detail?pageSize=10&subType=1&&type=5&pageNo="
       },
       {
         "name": "评分榜",
-        "link": "http://app.youzibank.com/popular/new/detail?pageSize=10subType=1&&type=6&pageNo="
+        "link": "http://app.youzibank.com/popular/new/detail?pageSize=10&subType=1&&type=6&pageNo="
       }
     ],
     "list": "$.data",
     "page": {
       "index": 1,
       "limit": 10,
-      "begin": "",
+      "begin": "1",
       "next": "${index}"
     }
   }
