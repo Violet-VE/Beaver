@@ -17,6 +17,14 @@
       "rank": 0,
       "auth": false,
       "version": 100
+    },
+    {
+      "name": "有兔阅读",
+      "url": "https://app.youzibank.com",
+      "category": 1,
+      "rank": 6,
+      "auth": false,
+      "version": 100
     }
   ]
 }
