@@ -72,11 +72,5 @@
       "begin": "",
       "next": "${index}"
     }
-  },
-  "auth": {
-    "login": "https://passport.yuewen.com",
-    "cookie": "https://ptlogin.qidian.com",
-    "valid": "a.read-btn-vip-login",
-    "order": "div.read-rss-auto"
   }
 }
