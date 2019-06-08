@@ -1,0 +1,32 @@
+{
+  "name": "小笔趣阁",
+  "version": 100,
+  "category": 1,
+  "url": "https://www.xiaobiquge.com",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["a.articlename"],
+    "author": ["span.author > a"],
+    "cover": ["div.l > p > img@attr->src"],
+    "summary": ["div.l2 > p.p3"],
+    "category": ["p.d1 > span"],
+    "update": ["span.lastupdate@js->${this}.replace(/更新时间：/g,'')"],
+    "link": ["a.articlename@attr->href"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "div.chapterlist > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#content"
+  },
+  "search": {
+    "link": "https://www.xiaobiquge.com/modules/article/search.php@post->searchkey=${key}",
+    "list": "ul.searchresult > li"
+  }
+}

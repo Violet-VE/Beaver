@@ -25,6 +25,118 @@
       "rank": 6,
       "auth": false,
       "version": 100
+    },
+    {
+      "name": "轻文轻小说",
+      "url": "https://www.iqing.com",
+      "category": 2,
+      "rank": 5,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "看书君",
+      "url": "https://www.kanshujun.com",
+      "category": 1,
+      "rank": 6,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "猎文网",
+      "url": "https://www.liewen.cc",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "小笔趣阁",
+      "url": "https://www.xiaobiquge.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "88读书网",
+      "url": "https://m.88dush.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "梧州中文台",
+      "url": "http://www.wzzw.la",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "雅文小说",
+      "url": "https://www.yawen365.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "幼狮书盟",
+      "url": "https://m.yssm.tv",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "爱奇文学",
+      "url": "https://www.i7wx.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "一本读",
+      "url": "http://www.ybdu.me",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "读一读小说",
+      "url": "http://duyidu.net",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "文学迷",
+      "url": "https://www.wenxuemi6.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "玫瑰小说网",
+      "url": "https://www.meiguixs.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
+    },
+    {
+      "name": "百合小说网",
+      "url": "https://m.baihexs.com",
+      "category": 1,
+      "rank": 0,
+      "auth": false,
+      "version": 100
     }
   ]
 }

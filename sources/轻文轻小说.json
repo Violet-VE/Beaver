@@ -1,0 +1,69 @@
+{
+  "name": "轻文轻小说",
+  "version": 100,
+  "category": 2,
+  "url": "https://www.iqing.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["$.title"],
+    "author": ["$.author_name"],
+    "cover": [
+      "$.cover@js->${this}.replace(/image/g,'new-image')+'?x-oss-process=image/resize,w_135,h_180'"
+    ],
+    "summary": ["$.intro"],
+    "category": ["#cat-list > a"],
+    "update": ["span[itemprop=datePublished]"],
+    "link": ["$.url@js->'https://www.iqing.com'+${this}"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "li.volume",
+    "orderBy": 0,
+    "booklet": {
+      "name": "h3",
+      "list": "li.chapter"
+    },
+    "chapter": {
+      "name": "a@attr->title@js->${this}.replace(/▶/g,'')",
+      "link": "a@attr->href@js->${this}.replace(/read/g,'content')@js->${this}.replace(/www/g,'poi') + '/chapter/'"
+    }
+  },
+  "content": {
+    "text": "$.results[0].value"
+  },
+  "search": {
+    "link": "https://poi.iqing.com/kensaku/?offset=0&limit=30&fields=title%2Curl%2Ccover%2Cauthor_name%2Cintro&type=book&order=2&q=${key}",
+    "list": "$.results"
+  },
+  "rank": {
+    "link": [
+      {
+        "name": "原创区",
+        "link": "https://poi.iqing.com/kensaku/?limit=12&q=&fields=title%2Curl%2Ccover%2Cauthor_name%2Cintro&type=book&order=1&channel=10&offset="
+      },
+      {
+        "name": "女性向",
+        "link": "https://poi.iqing.com/kensaku/?limit=12&q=&fields=title%2Curl%2Ccover%2Cauthor_name%2Cintro&type=book&order=1&channel=11&offset="
+      },
+      {
+        "name": "文库本",
+        "link": "https://poi.iqing.com/kensaku/?limit=12&q=&fields=title%2Curl%2Ccover%2Cauthor_name%2Cintro&type=book&order=1&channel=14&offset="
+      },
+      {
+        "name": "完结区",
+        "link": "https://poi.iqing.com/kensaku/?limit=12&q=&fields=title%2Curl%2Ccover%2Cauthor_name%2Cintro&type=book&order=1&end=1&offset="
+      },
+      {
+        "name": "VIP区",
+        "link": "https://poi.iqing.com/kensaku/?limit=12&q=&fields=title%2Curl%2Ccover%2Cauthor_name%2Cintro&type=vipbook&order=1&channel=10&offset=0"
+      }
+    ],
+    "list": "$.results",
+    "page": {
+      "index": 0,
+      "limit": 100,
+      "begin": "0",
+      "next": "${index}"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "读一读小说",
+  "version": 100,
+  "category": 1,
+  "url": "http://duyidu.net",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["div:nth-child(2)"],
+    "author": ["div:nth-child(4)"],
+    "cover": ["div.col-xs-2 > img@attr-src"],
+    "summary": ["#all"],
+    "category": ["div:nth-child(1)"],
+    "update": ["div:nth-child(5)"],
+    "link": ["div:nth-child(2) > a@attr->href"],
+    "catalog": ["${metadata.link}@js->${this}+'mulu.htm'"]
+  },
+  "catalog": {
+    "list": "#chapters-list > li:has(a)",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#txtContent"
+  },
+  "search": {
+    "link": "http://duyidu.net/search.htm?keyword=${key}",
+    "list": "#novel-list > ul > li.clearfix:gt(0)"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "猎文网",
+  "version": 100,
+  "category": 1,
+  "url": "https://www.liewen.cc",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["a[cpos=title] > span"],
+    "author": [
+      "div.result-game-item-info > p:nth-child(1) > span:nth-child(2)"
+    ],
+    "cover": [
+      "div.result-game-item-pic > a > img@attr->src",
+      "#fmimg > img@attr->src"
+    ],
+    "summary": ["p.result-game-item-desc"],
+    "category": [
+      "div.result-game-item-info > p:nth-child(2) > span:nth-child(2)"
+    ],
+    "update": [
+      "div.result-game-item-info > p:nth-child(3) > span:nth-child(2)"
+    ],
+    "link": ["div.result-game-item-pic > a@attr->href"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "#list > dl > dd",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#content"
+  },
+  "search": {
+    "link": "https://www.liewen.cc/search.php?keyword=${key}",
+    "list": "div.result-list > div.result-item"
+  }
+}

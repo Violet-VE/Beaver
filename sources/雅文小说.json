@@ -1,0 +1,73 @@
+{
+  "name": "雅文小说",
+  "version": 100,
+  "category": 1,
+  "url": "https://www.yawen365.com",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["span.n2 > a"],
+    "author": ["span.a2 > a"],
+    "cover": ["div.cover > img@attr->src"],
+    "summary": ["p.desc"],
+    "category": ["span.nt"],
+    "update": ["span.t"],
+    "link": ["span.n2 > a@attr->href"],
+    "catalog": ["article.info > footer > a@attr->href"]
+  },
+  "catalog": {
+    "list": "ul.mulu > li:gt(9):has(a)",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#content"
+  },
+  "search": {
+    "link": "https://www.yawen365.com/search.htm?keyword=${key}",
+    "list": "section.lastest > ul > li:gt(1)"
+  },
+  "rank": {
+    "link": [
+      {
+        "name": "玄幻奇幻",
+        "link": "https://www.kanshujun.com/top/xhqh.html"
+      },
+      {
+        "name": "武侠仙侠",
+        "link": "https://www.kanshujun.com/top/wxxx.html"
+      },
+      {
+        "name": "都市小说",
+        "link": "https://www.kanshujun.com/top/dushi.html"
+      },
+      {
+        "name": "历史小说",
+        "link": "https://www.kanshujun.com/top/lishi.html"
+      },
+      {
+        "name": "军事小说",
+        "link": "https://www.kanshujun.com/top/junshi.html"
+      },
+      {
+        "name": "科幻小说",
+        "link": "https://www.kanshujun.com/top/kehuan.html"
+      },
+      {
+        "name": "恐怖悬疑",
+        "link": "https://www.kanshujun.com/top/kbxy.html"
+      },
+      {
+        "name": "网游竞技",
+        "link": "https://www.kanshujun.com/top/wyjj.html"
+      },
+      {
+        "name": "其他类型",
+        "link": "https://www.kanshujun.com/top/qita.html"
+      }
+    ],
+    "list": "div.bandListRight > ul > li"
+  }
+}

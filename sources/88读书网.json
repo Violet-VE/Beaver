@@ -1,0 +1,38 @@
+{
+  "name": "88读书网",
+  "version": 100,
+  "category": 1,
+  "url": "https://m.88dush.com",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["div.block_txt > h2 > a"],
+    "author": [
+      "div.block_txt > p:nth-child(5)@js->${this}.replace(/.+作者：|\\s/g,'')"
+    ],
+    "cover": ["div.block_img > a > img@attr->src"],
+    "summary": ["div.block_txt > p:nth-child(7)"],
+    "category": [
+      "div.block_txt > p:nth-child(6)@js->${this}.replace(/.+类型：|\\s/g,'')"
+    ],
+    "update": [
+      "div.block_txt > p:nth-child(8)@js->${this}.replace(/.+更新：|\\s/g,'')"
+    ],
+    "link": ["div.block_txt > h2 > a@attr->href"],
+    "catalog": ["span.left > a@attr->href"]
+  },
+  "catalog": {
+    "list": "div.mulu > ul > li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div.yd_text2"
+  },
+  "search": {
+    "link": "https://so.88dush.com/search/so.php?q=${key}",
+    "list": "div.ops_cover > div.block"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "百合小说网",
+  "version": 100,
+  "category": 1,
+  "url": "https://www.baihexs.com",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["td:nth-child(1) > a"],
+    "author": ["td:nth-child(3)"],
+    "cover": ["#bookimg > img@attr->src"],
+    "summary": ["#bookintro > p"],
+    "category": ["#count > span"],
+    "update": ["td:nth-child(5)"],
+    "link": ["td:nth-child(1) > a@attr->href"],
+    "catalog": ["#reader > a@attr->href"]
+  },
+  "catalog": {
+    "list": "#readerlist > ul > li:has(a)",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#content"
+  },
+  "search": {
+    "link": "https://www.baihexs.com/modules/article/search.php@post->searchtype=articlename&searchkey=${key}",
+    "list": "tbody > tr#nr"
+  }
+}

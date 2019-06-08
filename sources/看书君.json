@@ -1,0 +1,76 @@
+{
+  "name": "看书君",
+  "version": 100,
+  "category": 1,
+  "url": "https://www.kanshujun.com",
+  "charset": "gbk",
+  "metadata": {
+    "name": ["div.bandItemLeft > h2", "div.bookPhr > h2"],
+    "author": ["p.bandPhr > span"],
+    "cover": [
+      "div.bandItemLeft > a > img@attr->src",
+      "div.bookImg > img@attr->src"
+    ],
+    "summary": ["p.bandDesc", "div.introCon > p"],
+    "category": ["div.bookPhr > dl > dd:nth-child(2)"],
+    "update": ["div.renew > span"],
+    "link": ["div.bandItemLeft > a@attr->href"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "div.chapterCon > ul >li",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "div.articleCon"
+  },
+  "search": {
+    "link": "https://www.kanshujun.com/modules/article/search.php?searchtype=articlename&searchkey=${key}",
+    "list": "ul:nth-child(2) > li"
+  },
+  "rank": {
+    "link": [
+      {
+        "name": "玄幻奇幻",
+        "link": "https://www.kanshujun.com/top/xhqh.html"
+      },
+      {
+        "name": "武侠仙侠",
+        "link": "https://www.kanshujun.com/top/wxxx.html"
+      },
+      {
+        "name": "都市小说",
+        "link": "https://www.kanshujun.com/top/dushi.html"
+      },
+      {
+        "name": "历史小说",
+        "link": "https://www.kanshujun.com/top/lishi.html"
+      },
+      {
+        "name": "军事小说",
+        "link": "https://www.kanshujun.com/top/junshi.html"
+      },
+      {
+        "name": "科幻小说",
+        "link": "https://www.kanshujun.com/top/kehuan.html"
+      },
+      {
+        "name": "恐怖悬疑",
+        "link": "https://www.kanshujun.com/top/kbxy.html"
+      },
+      {
+        "name": "网游竞技",
+        "link": "https://www.kanshujun.com/top/wyjj.html"
+      },
+      {
+        "name": "其他类型",
+        "link": "https://www.kanshujun.com/top/qita.html"
+      }
+    ],
+    "list": "div.bandListRight > ul > li"
+  }
+}

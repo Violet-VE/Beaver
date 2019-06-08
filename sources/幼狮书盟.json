@@ -1,0 +1,36 @@
+{
+  "name": "幼狮书盟",
+  "version": 100,
+  "category": 1,
+  "url": "https://m.yssm.tv",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["a > p.title"],
+    "author": [
+      "a > p:nth-child(2)@js->${this}.split(' | ')[1].replace('作者：','')"
+    ],
+    "cover": ["div.synopsisArea_detail > img@attr->src"],
+    "summary": ["#breview"],
+    "category": ["a > p:nth-child(2)@js->${this}.split(' | ')[0]"],
+    "update": [
+      "div.synopsisArea_detail > p:nth-child(5)@js->${this}.replace('更新：','')"
+    ],
+    "link": ["a@attr->href"],
+    "catalog": ["${metadata.link}@js->${this}+'all.html'"]
+  },
+  "catalog": {
+    "list": "#chapterlist > p:gt(2)",
+    "orderBy": 0,
+    "chapter": {
+      "name": "a",
+      "link": "a@attr->href"
+    }
+  },
+  "content": {
+    "text": "#chaptercontent"
+  },
+  "search": {
+    "link": "https://m.yssm.tv/SearchBook.php?q=${key}",
+    "list": "div.recommend > div"
+  }
+}
