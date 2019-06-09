@@ -3,7 +3,7 @@
   "version": 100,
   "category": 1,
   "url": "http://www.wzzw.la",
-  "charset": "gbk",
+  "charset": "utf-8",
   "metadata": {
     "name": ["div.col-xs-3 > a"],
     "author": ["div:nth-child(4)"],
