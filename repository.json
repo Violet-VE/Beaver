@@ -129,14 +129,6 @@
       "rank": 0,
       "auth": false,
       "version": 100
-    },
-    {
-      "name": "百合小说网",
-      "url": "https://m.baihexs.com",
-      "category": 1,
-      "rank": 0,
-      "auth": false,
-      "version": 100
     }
   ]
 }
