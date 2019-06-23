@@ -1,6 +1,6 @@
 {
   "name": "起点中文",
-  "version": 100,
+  "version": 101,
   "category": 1,
   "url": "https://www.qidian.com",
   "charset": "utf-8",
@@ -21,7 +21,7 @@
     ],
     "update": ["em.time"],
     "link": [
-      "div.book-img-box > a[data-eid=qd_S04]@attr->href",
+      "div.book-img-box > a[data-eid=qd_C39]@attr->href",
       "div.book-mid-info > h4 > a@attr->href"
     ],
     "catalog": [

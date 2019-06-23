@@ -1,0 +1,32 @@
+{
+  "name": "99藏书",
+  "version": 100,
+  "category": 1,
+  "url": "http://192.168.1.24:8009",
+  "charset": "utf-8",
+  "metadata": {
+    "name": ["$.bookName", "$.bookName"],
+    "author": ["$.author", "$.author"],
+    "cover": ["$.cover", "$.coverImg"],
+    "summary": ["$.intro", "$.intro"],
+    "category": ["$.category", "$.category"],
+    "update": [],
+    "link": ["$.bookUrl@js->'http://192.168.1.24:8009'+${this}"],
+    "catalog": []
+  },
+  "catalog": {
+    "list": "$.chapters",
+    "orderBy": 0,
+    "chapter": {
+      "name": "$.name",
+      "link": "$.url@js->'http://192.168.1.24:8009'+${this}"
+    }
+  },
+  "content": {
+    "text": "$.content"
+  },
+  "search": {
+    "link": "http://192.168.1.24:8009/book/search?keyword=${key}&page=0",
+    "list": "$.books"
+  }
+}
