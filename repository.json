@@ -99,14 +99,6 @@
       "version": 100
     },
     {
-      "name": "读一读小说",
-      "url": "http://duyidu.net",
-      "category": 1,
-      "rank": 0,
-      "auth": false,
-      "version": 100
-    },
-    {
       "name": "文学迷",
       "url": "https://www.wenxuemi6.com",
       "category": 1,
