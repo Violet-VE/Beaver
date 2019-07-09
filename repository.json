@@ -3,14 +3,6 @@
   "summary": "Provided links by zsakvo",
   "list": [
     {
-      "name": "起点中文",
-      "url": "https://www.qidian.com",
-      "category": 1,
-      "rank": 5,
-      "auth": true,
-      "version": 102
-    },
-    {
       "name": "九桃小说",
       "url": "https://www.9txs.com",
       "category": 1,
@@ -129,24 +121,6 @@
       "rank": 0,
       "auth": false,
       "version": 100
-    },
-    {
-      "name": "99藏书",
-      "url": "http://192.168.1.24:8009",
-      "category": 1,
-      "rank": 0,
-      "auth": false,
-      "version": 100,
-      "beta": true
-    },
-    {
-      "name": "とある魔術の禁書目録",
-      "url": "http://http://magicindexlib.890m.com",
-      "category": 2,
-      "rank": 0,
-      "auth": false,
-      "version": 100,
-      "beta": true
     }
   ]
 }
