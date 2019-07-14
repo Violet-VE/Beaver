@@ -7,7 +7,7 @@
   "metadata": {
     "name": [".book-title", "meta[property=og:novel:book_name]@attr->content"],
     "author": [".book-author", "meta[property=og:novel:author]@attr->content"],
-    "cover": ["img@attr->data-echo@js->'https://m.sanyuedev.top' + ${this}", "meta[property=og:image]@attr->content"],
+    "cover": ["img@attr->data-echo@js->'https://m.sanyuedev.top' + ${this}", "meta[property=og:image]@attr->content@js->'https://m.sanyuedev.top' + ${this}"],
     "summary": [".book-desc", "meta[property=og:description]@attr->content"],
     "category": ["em.tag-small:nth-child(1)", "meta[property=og:novel:category]@attr->content"],
     "status": ["meta[property=og:novel:status]@attr->content"],
