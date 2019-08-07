@@ -25,7 +25,7 @@
     }
   },
   "content": {
-    "text": "#content > p:gt(1)"
+    "text": "#content > p:gt(0)"
   },
   "search": {
     "link": "https://www.zhaishuyuan.com/search/@post->s=${key}",
