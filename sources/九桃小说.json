@@ -1,6 +1,6 @@
 {
   "name": "九桃小说",
-  "version": 100,
+  "version": 101,
   "category": 1,
   "url": "https://www.9txs.com",
   "charset": "utf-8",
@@ -13,7 +13,9 @@
       "p:nth-child(4)>a:nth-child(3)",
       "p:nth-child(3) > a:nth-child(2)"
     ],
+    "status": ["meta[property=og:novel:status]@attr->content"],
     "update": ["span.light@js->${this}.match(/\\d.+\\d/g)+''"],
+    "lastChapter": ["meta[property=og:novel:latest_chapter_name]@attr->content"],
     "link": [
       "a.bookname@attr->href@js->${url}+${this}",
       "meta[property=og:url]@attr->content@js->${url}+${this}"
