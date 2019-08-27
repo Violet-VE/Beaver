@@ -1,6 +1,6 @@
 {
   "name": "我的小书屋",
-  "version": 102,
+  "version": 103,
   "category": 1,
   "url": "https://m.sanyuedev.top",
   "charset": "utf-8",
@@ -35,23 +35,17 @@
     "link": [
       {
         "name": "点击排行",
-        "link": "https://m.sanyuedev.top/top/allvisit"
+        "link": "https://m.sanyuedev.top/top/allvisit.html"
       },
       {
         "name": "收藏排行",
-        "link": "https://m.sanyuedev.top/top/marknum"
+        "link": "https://m.sanyuedev.top/top/marknum.html"
       },
       {
         "name": "最新入库",
-        "link": "https://m.sanyuedev.top/top/postdate"
+        "link": "https://m.sanyuedev.top/top/postdate.html"
       }
     ],
-    "list": "li.book-li > a",
-    "page": {
-      "index": 1,
-      "limit": 15,
-      "begin": ".html",
-      "next": "/${index}.html"
-    }
+    "list": "li.book-li > a"
   }
 }
