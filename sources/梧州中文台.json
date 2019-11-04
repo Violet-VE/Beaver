@@ -1,6 +1,6 @@
 {
   "name": "梧州中文台",
-  "version": 100,
+  "version": 101,
   "category": 1,
   "url": "http://www.wzzw.la",
   "charset": "utf-8",
@@ -12,7 +12,7 @@
     "category": ["div.col-xs-1 > i"],
     "update": ["div:nth-child(5)"],
     "link": ["div:nth-child(2) > a@attr->href"],
-    "catalog": ["li.list-group-item tac > a@attr->href"]
+    "catalog": ["li.list-group-item.tac > a@attr->href"]
   },
   "catalog": {
     "list": "#chapters-list > li:has(a)",
