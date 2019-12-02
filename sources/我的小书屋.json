@@ -1,13 +1,13 @@
 {
   "name": "我的小书屋",
-  "version": 103,
+  "version": 104,
   "category": 1,
   "url": "https://m.sanyuedev.top",
   "charset": "utf-8",
   "metadata": {
     "name": [".book-title", "meta[property=og:novel:book_name]@attr->content"],
     "author": [".book-author", "meta[property=og:novel:author]@attr->content"],
-    "cover": ["img@attr->data-echo@js->'https://m.sanyuedev.top' + ${this}", "meta[property=og:image]@attr->content@js->'https://m.sanyuedev.top' + ${this}"],
+    "cover": ["img@attr->data-echo", "meta[property=og:image]@attr->content"],
     "summary": [".book-desc", "meta[property=og:description]@attr->content"],
     "category": ["em.tag-small:nth-child(1)", "meta[property=og:novel:category]@attr->content"],
     "status": ["meta[property=og:novel:status]@attr->content"],
@@ -29,23 +29,6 @@
   },
   "search": {
     "link": "https://m.sanyuedev.top/search.html@post->searchkey=${key}",
-    "list": "li.book-li > a"
-  },
-  "rank": {
-    "link": [
-      {
-        "name": "点击排行",
-        "link": "https://m.sanyuedev.top/top/allvisit.html"
-      },
-      {
-        "name": "收藏排行",
-        "link": "https://m.sanyuedev.top/top/marknum.html"
-      },
-      {
-        "name": "最新入库",
-        "link": "https://m.sanyuedev.top/top/postdate.html"
-      }
-    ],
     "list": "li.book-li > a"
   }
 }
