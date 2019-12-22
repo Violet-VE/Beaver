@@ -1,6 +1,6 @@
 {
   "name": "亲小说",
-  "version": 103,
+  "version": 104,
   "category": 2,
   "url": "https://www.qinxiaoshuo.com",
   "charset": "utf-8",
@@ -29,32 +29,12 @@
   },
   "content": {
     "text": "div#chapter_content",
-    "next": {
-      "link": "div.buttons > p > a",
-      "text": "下一页"
+    "page": {
+      "next": "a:matches(下一页)@attr->href"
     }
   },
   "search": {
     "link": "https://www.qinxiaoshuo.com/search/?keyword=${key}",
     "list": "div.book_item"
-  },
-  "rank": {
-    "link": [
-      {
-        "name": "日轻",
-        "link": "https://www.qinxiaoshuo.com/tag/日轻"
-      },
-      {
-        "name": "科幻",
-        "link": "https://www.qinxiaoshuo.com/tag/科幻"
-      }
-    ],
-    "list": "div.book_item",
-    "page": {
-      "index": 1,
-      "limit": 16,
-      "begin": "",
-      "next": "/${index}.html"
-    }
   }
 }

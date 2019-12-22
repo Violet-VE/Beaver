@@ -1,6 +1,6 @@
 {
   "name": "zsakvo",
-  "summary": "Provided links by zsakvo",
+  "summary": "Provided links by github.com\n1. 修复斋书苑目录翻页问题\n2. 修复亲小说内容翻页问题",
   "list": [
     {
       "name": "九桃小说",
@@ -176,7 +176,7 @@
       "category": 1,
       "rank": 0,
       "auth": false,
-      "version": 103
+      "version": 104
     },
     {
       "name": "亲小说",
@@ -184,7 +184,7 @@
       "category": 2,
       "rank": 2,
       "auth": false,
-      "version": 103
+      "version": 104
     },
     {
       "name": "轻之文库",
